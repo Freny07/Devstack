@@ -1,0 +1,210 @@
+.artisans-page {
+  padding: 8rem 2rem 4rem 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+.artisans-header {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.artisans-header h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.artisans-header p {
+  color: var(--color-text-light);
+  font-size: 1.2rem;
+  font-style: italic;
+  line-height: 1.6;
+}
+
+.artisans-list {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-bottom: 4rem;
+}
+
+.artisan-card {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .artisan-card {
+    flex-direction: row;
+  }
+}
+
+.artisan-image {
+  flex: 0 0 350px;
+  position: relative;
+}
+
+.artisan-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: sepia(0.2) contrast(1.1);
+  min-height: 300px;
+}
+
+.artisan-details {
+  padding: 2.5rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.artisan-info-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.artisan-info-header h2 {
+  font-size: 2rem;
+  margin-bottom: 0.3rem;
+}
+
+.artisan-meta {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-family: var(--font-heading);
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+}
+
+.specialty {
+  color: var(--color-primary);
+  font-weight: bold;
+}
+
+.location {
+  color: var(--color-text-light);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.artisan-ratings {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: rgba(234, 221, 182, 0.5);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  border: 1px solid var(--color-bg-dark);
+}
+
+.stars {
+  display: flex;
+  gap: 2px;
+}
+
+.artisan-story {
+  position: relative;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--color-text-main);
+  padding: 1.5rem;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-left: 2px solid var(--color-primary);
+  margin-bottom: 1.5rem;
+  font-style: italic;
+}
+
+.quote-mark {
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  font-size: 3rem;
+  font-family: var(--font-logo);
+  color: var(--color-primary);
+  opacity: 0.2;
+}
+
+.support-section h4 {
+  margin-bottom: 0.8rem;
+  color: var(--color-primary-dark);
+}
+
+.support-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.support-tag {
+  background-color: transparent;
+  border: 1px solid var(--color-primary);
+  color: var(--color-primary-dark);
+  padding: 0.3rem 0.8rem;
+  font-size: 0.8rem;
+  border-radius: 4px;
+  font-family: var(--font-heading);
+}
+
+.artisan-actions {
+  margin-top: auto;
+}
+
+.support-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.general-feedback-section {
+  text-align: center;
+  padding: 3rem;
+}
+
+.general-feedback-section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+.general-feedback-section p {
+  color: var(--color-text-light);
+  margin-bottom: 2rem;
+}
+
+.general-feedback-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.general-feedback-section textarea {
+  width: 100%;
+  padding: 1rem;
+  background-color: rgba(255,255,255,0.4);
+  border: 1px solid var(--color-bg-dark);
+  border-radius: 4px;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  resize: vertical;
+}
+
+.general-feedback-section textarea:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  background-color: rgba(255,255,255,0.6);
+}
