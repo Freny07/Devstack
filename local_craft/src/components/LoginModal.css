@@ -1,0 +1,126 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(30, 20, 15, 0.7);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+}
+
+.login-modal {
+  width: 90%;
+  max-width: 480px;
+  position: relative;
+  background-color: var(--color-bg-parchment);
+  border: 2px solid var(--color-primary);
+  padding: 3rem 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 25px 50px -12px rgba(60, 44, 32, 0.5);
+}
+
+.close-btn {
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  background: var(--color-bg-parchment);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--color-primary);
+  color: var(--color-primary);
+  transition: transform 0.3s ease;
+  z-index: 1000;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+.close-btn:hover {
+  transform: rotate(90deg);
+  color: var(--color-primary-dark);
+}
+
+.modal-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.modal-subtitle {
+  text-align: center;
+  color: var(--color-text-light);
+  margin-bottom: 2rem;
+  font-style: italic;
+}
+
+.login-type-toggle {
+  display: flex;
+  border: 1px solid var(--color-primary);
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+.login-type-toggle button {
+  flex: 1;
+  padding: 0.8rem;
+  background: transparent;
+  border: none;
+  color: var(--color-primary);
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.login-type-toggle button.active {
+  background-color: var(--color-primary);
+  color: var(--color-bg-parchment);
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  color: var(--color-text-main);
+}
+
+.form-group input, .form-group select {
+  padding: 0.8rem;
+  background-color: rgba(255, 255, 255, 0.4);
+  border: 1px solid #d5c398;
+  border-radius: 4px;
+  font-family: var(--font-body);
+  color: var(--color-text-main);
+  outline: none;
+  font-size: 1rem;
+}
+
+.form-group input:focus, .form-group select:focus {
+  border-color: var(--color-primary);
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.form-submit {
+  margin-top: 1rem;
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.1rem;
+}
