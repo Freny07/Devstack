@@ -31,14 +31,7 @@ const Navbar = () => {
           >
             Home
           </NavLink>
-          <NavLink
-            to="/discover"
-            className={({ isActive }) =>
-              isActive ? "nav-link active" : "nav-link"
-            }
-          >
-            Discover
-          </NavLink>
+          <NavLink to="/discover" className={({isActive}) => isActive ? 'nav-link active' : 'nav-link'}>Discover</NavLink>
           <NavLink
             to="/artisans"
             className={({ isActive }) =>
