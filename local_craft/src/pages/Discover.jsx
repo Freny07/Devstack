@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
+import ProductModal from '../components/ProductModal';
 import './Discover.css';
 
 const mockProducts = [
@@ -171,6 +172,12 @@ const Discover = () => {
           </motion.div>
         ))}
       </motion.div>
+
+      <ProductModal 
+        product={selectedProduct} 
+        isOpen={!!selectedProduct} 
+        onClose={() => setSelectedProduct(null)} 
+      />
 
     </div>
   );
